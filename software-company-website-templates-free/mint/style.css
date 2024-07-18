@@ -1,0 +1,109 @@
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e0f7fa;
+    background-image: url(https://i.pinimg.com/564x/76/35/67/763567aae0aad0a9fc362d5274143a08.jpg);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background-color: #e9f4fb;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+    border-radius: 15px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #000; 
+}
+
+.profile-header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 5px solid #b0bec5; 
+    transition: transform 0.3s;
+}
+
+.profile-header img:hover {
+    transform: scale(1.1);
+}
+
+.profile-header h1 {
+    margin: 10px 0;
+    color: #00695c; 
+    font-size: 2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.profile-header h1:hover{
+    transform: scale(1.05);
+}
+
+.profile-header p {
+    color: #757575; 
+    font-size: 1.1em;
+}
+
+.section {
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.section h2 {
+
+    background-color: #dbe7ff;
+    border: 1px solid #474747;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    color:#00695c;
+    font-size: 1.1em;
+    transition: background-color 0.3s, transform 0.3s;
+    
+}
+
+.section h2:hover{
+    background-color: #bdd5ff;
+    transform: scale(1.03);
+}
+
+.section p {
+    margin: 10px 0;
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+.content {
+     margin-bottom: 3em;
+}
+.content p {
+    display: inline;
+    background-repeat: no-repeat;
+    transition: all 500ms ease-in-out;
+}
+.v2 p {
+    background-position: bottom left;
+    background-size: 0% 3px;
+    background-image: repeating-linear-gradient(to right, #4834d4 0 3px, transparent 0 6px);
+    padding-bottom: 3px;
+}
+.v2:hover p {
+    background-size: 100% 2px;
+}
