@@ -508,10 +508,10 @@ a {
     top: -10px; }
 
 .cover-v1 {
-  background-size: cover;
-  background-position: center center;
-  background-repeat: repeat;
-  width: 100%; }
+  background-size: contain;
+  background: no-repeat;
+  background-position: center;
+  width: 50%; }
   .cover-v1.gradient-bottom-black {
     position: relative; }
     .cover-v1.gradient-bottom-black:before {
